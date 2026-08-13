@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "target": "ES2023",
+    "module": "ESNext", 
+    "moduleResolution": "Bundler", 
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "baseUrl": ".",          // ✅ adicione
+    "paths": {               // ✅ adicione
+      "@generated/prisma": ["./src/generated/prisma"],
+      "@generated/prisma/*": ["./src/generated/prisma/*"]
+    },
+    "rootDir": ".",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true
+  },
+  "include": ["src", "prisma.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
