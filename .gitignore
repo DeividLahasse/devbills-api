@@ -6,3 +6,6 @@ node_modules
 
 # Firebase service account (credenciais sensíveis)
 firebase-service-account.json
+ 
+#  for run api
+#  npm start
